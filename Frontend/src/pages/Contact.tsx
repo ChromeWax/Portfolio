@@ -14,25 +14,45 @@ function Contact() {
   const [messageEmail, setMessageEmail] = useState("");
 
   const addNewsLetter = () => {
-    fetch(`http://127.0.0.1:8000/newsletter/add/${newsletterEmailAddress}`, {
-      method: "GET"
+    let value = {
+      email: newsletterEmailAddress
+    };
+
+    fetch(`http://127.0.0.1:8000/newsletter/add/`, {
+      method: "POST",
+      headers: {
+        'Content-Type': "application/json",
+      },
+      body: JSON.stringify(value),
     }).then(async function (response) {
       if (response.status === 200) {
         setmessageNewsletter("Successfully added email!");
+      } else if (response.status === 401) {
+        setmessageNewsletter("Email already added");
       } else {
-        setmessageNewsletter("Email already added or something else went wrong");
+        setmessageNewsletter("Something went wrong");
       }
     });
   };
 
   const removeNewsLetter = () => {
-    fetch(`http://127.0.0.1:8000/newsletter/remove/${newsletterEmailAddress}`, {
-      method: "GET"
+    let value = {
+      email: newsletterEmailAddress
+    };
+
+    fetch(`http://127.0.0.1:8000/newsletter/remove/`, {
+      method: "DELETE",
+      headers: {
+        'Content-Type': "application/json",
+      },
+      body: JSON.stringify(value),
     }).then(async function (response) {
       if (response.status === 200) {
         setmessageNewsletter("Successfully deleted email!");
+      } else if (response.status === 401 ) {
+        setmessageNewsletter("Email already unsubscribed");
       } else {
-        setmessageNewsletter("Email not in list or something else went wrong");
+        setmessageNewsletter("Something went wrong");
       }
     });
   };
@@ -105,7 +125,12 @@ function Contact() {
               onChange={(e) => setEmailAddress(e.target.value)}
             />
           </Form.Group>
-
+          <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Label>Title</Form.Label>
+            <Form.Control
+              onChange={(e) => setEmailAddress(e.target.value)}
+            />
+          </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
             <Form.Label>Body</Form.Label>
             <Form.Control
