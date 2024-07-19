@@ -125,12 +125,12 @@ function Projects() {
   const [currentCategory, setCurrentCategory] = useState(Category.all);
 
   const setVisibleCardsToCategory = (category: Category) => {
-    let newVisibleCards: Card[] = []
+    let newVisibleCards: Card[] = [];
     availableCards.forEach((availableCard) => {
       if (category === Category.all) {
-        newVisibleCards.push(availableCard)
+        newVisibleCards.push(availableCard);
       } else if (availableCard.category == category) {
-        newVisibleCards.push(availableCard)
+        newVisibleCards.push(availableCard);
       }
     });
     setVisibleCards(newVisibleCards);
@@ -141,50 +141,60 @@ function Projects() {
       <NavBar />
       <Header text="Projects" />
       <Container fluid="md" className="mt-3">
-        <Button
-          variant={
-            currentCategory === Category.all ? "primary" : "outline-primary"
-          }
-          onClick={() => {
-            setCurrentCategory(Category.all)
-            setVisibleCardsToCategory(Category.all)
-          }}
-        >
-          All
-        </Button>{" "}
-        <Button
-          variant={
-            currentCategory === Category.programming ? "primary" : "outline-primary"
-          }
-          onClick={() => {
-            setCurrentCategory(Category.programming)
-            setVisibleCardsToCategory(Category.programming)
-          }}
-        >
-          Programming
-        </Button>{" "}
-        <Button
-          variant={
-            currentCategory === Category.render ? "primary" : "outline-primary"
-          }
-          onClick={() => {
-            setCurrentCategory(Category.render)
-            setVisibleCardsToCategory(Category.render)
-          }}
-        >
-          3D Render
-        </Button>{" "}
+        <div style={{ display: "flex", justifyContent: "center", gap: "5px" }}>
+          <Button
+            variant={
+              currentCategory === Category.all ? "primary" : "outline-primary"
+            }
+            onClick={() => {
+              setCurrentCategory(Category.all);
+              setVisibleCardsToCategory(Category.all);
+            }}
+          >
+            All
+          </Button>
+          <Button
+            variant={
+              currentCategory === Category.programming
+                ? "primary"
+                : "outline-primary"
+            }
+            onClick={() => {
+              setCurrentCategory(Category.programming);
+              setVisibleCardsToCategory(Category.programming);
+            }}
+          >
+            Programming
+          </Button>
+          <Button
+            variant={
+              currentCategory === Category.render
+                ? "primary"
+                : "outline-primary"
+            }
+            onClick={() => {
+              setCurrentCategory(Category.render);
+              setVisibleCardsToCategory(Category.render);
+            }}
+          >
+            3D Render
+          </Button>
+        </div>
       </Container>
       <Container fluid="md" className="mt-3">
         <Row xs={1} md={3} className="g-2">
           {Array.from({ length: visibleCards.length }).map((_, idx) => (
             <Col key={idx}>
-              <CardButton image={visibleCards[idx].image} text={visibleCards[idx].text} link={visibleCards[idx].link}/>
+              <CardButton
+                image={visibleCards[idx].image}
+                text={visibleCards[idx].text}
+                link={visibleCards[idx].link}
+              />
             </Col>
           ))}
         </Row>
       </Container>
-      <Footer/>
+      <Footer />
     </>
   );
 }

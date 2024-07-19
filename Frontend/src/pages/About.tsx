@@ -1,7 +1,6 @@
 import NavBar from "../components/NavBar";
 import Header from "../components/Header";
 import ImageFluid from "../components/ImageFluid";
-import Button from "react-bootstrap/Button";
 import Carousel from "react-bootstrap/Carousel";
 import Container from "react-bootstrap/Container";
 import Footer from "../components/Footer";
@@ -40,23 +39,19 @@ function About() {
             I recently graduated Summa Cum Laude from Drexel University with a
             Bachelor's Degree in Computer Science and a minor in Animation and
             Visual Effects. Additionally, I completed the Honors program at
-            Pennoni Honors College. I am passionate about creating projects that
-            have a meaningful impact, whether through computer programs, art
-            pieces, or writings. I have always been fascinated by the
-            progression of technology and am eager to contribute to its
-            advancement.
+            Pennoni Honors College. During my time at Drexel, I had the great
+            opportunity to a co-op at three amazing companies that not only
+            built up my skills but also learn how to become a better team
+            player.
+            <br />
+            <br />I am passionate about creating projects that have a meaningful
+            impact, whether through computer programs, art pieces, writings and more.
+            I have always been fascinated by the progression of technology and
+            am eager to contribute to its advancement.
           </p>
         </div>
       </Container>
-      <Container>
-        <Button href="https://www.linkedin.com/in/csrichardvo/" target="_blank">
-          LinkedIn
-        </Button>{" "}
-        <Button href="https://www.artstation.com/richardvo" target="_blank">
-          ArtStation
-        </Button>{" "}
-      </Container>
-      <Footer/>
+      <Footer />
     </>
   );
 }

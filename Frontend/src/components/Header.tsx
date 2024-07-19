@@ -1,5 +1,3 @@
-import { Container } from "react-bootstrap";
-
 interface HeaderProp {
   text: string;
 }

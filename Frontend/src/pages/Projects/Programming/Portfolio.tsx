@@ -23,7 +23,7 @@ function Portfolio() {
             <br />
             <b>Languages:</b> Typescript, HTML, CSS
             <br />
-            <b>Frameworks:</b> React, Bootstrap
+            <b>Tools:</b> React, Bootstrap, Django, MongoDB
             <br />
             <b>Deployment:</b> AWS S3, AWS EC2, AWS CloudFront
           </p>

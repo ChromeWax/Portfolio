@@ -23,7 +23,7 @@ import Switch from "./pages/Projects/Art/Switch.tsx";
 import ChromePhone from "./pages/Projects/Art/ChromePhone.tsx";
 import GameBoy from "./pages/Projects/Art/GameBoy.tsx";
 
-import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const router = createBrowserRouter([
   {
