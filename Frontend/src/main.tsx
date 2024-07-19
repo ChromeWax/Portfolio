@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 
 import Projects from "./pages/Projects.tsx";
 import About from "./pages/About.tsx";
@@ -25,7 +25,7 @@ import GameBoy from "./pages/Projects/Art/GameBoy.tsx";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Projects />,

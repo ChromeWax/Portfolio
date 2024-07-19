@@ -52,8 +52,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'Portfolio.urls'
-CORS_ALLOWED_ORIGINS = ["http://localhost:5173", "https://richardvo.net"]
-CSRF_TRUSTED_ORIGINS = ["http://localhost:5173", "https://richardvo.net"]
+CORS_ALLOWED_ORIGINS = ["http://localhost:4173", "https://richardvo.net"]
+CSRF_TRUSTED_ORIGINS = ["http://localhost:4173", "https://richardvo.net"]
 
 TEMPLATES = [
     {
