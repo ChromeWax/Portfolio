@@ -26,17 +26,27 @@ function HomeLab() {
             <br />
             <b>Hypervisors:</b> Proxmox, VMware ESXI
             <br />
-            <b>Services I use:</b> Perforce, OpenVPN, PiHole, Unbound, and various game servers
+            <b>Services I use:</b> Perforce, OpenVPN, PiHole, Unbound, and
+            various game servers
           </p>
         </div>
         <Button href="https://github.com/ChromeWax/DiscordBot" target="_blank">
           GitHub
         </Button>
       </Container>
-      <ImageFigure image="Homelab/Homelab_1.jpg" text="Homelab setup (Old now, got newer hardware)" />
-      <ImageFigure image="Homelab/Homelab_2.png" text="Services from Discord Bot" />
+      <ImageFigure
+        image="Homelab/Homelab_1.jpg"
+        text="Homelab setup (Old now, got newer hardware)"
+      />
+      <ImageFigure
+        image="Homelab/Homelab_2.png"
+        text="Services from Discord Bot"
+      />
       <ImageFigure image="Homelab/Homelab_3.png" text="Bot in action" />
-      <ImageFigure image="Homelab/Homelab_4.png" text="Bot as a music player in Discord calls" />
+      <ImageFigure
+        image="Homelab/Homelab_4.png"
+        text="Bot as a music player in Discord calls"
+      />
       <Footer />
     </>
   );

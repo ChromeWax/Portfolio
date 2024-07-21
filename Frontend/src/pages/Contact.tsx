@@ -15,13 +15,13 @@ function Contact() {
 
   const addNewsLetter = () => {
     let value = {
-      email: newsletterEmailAddress
+      email: newsletterEmailAddress,
     };
 
     fetch(`https://3.21.19.109:8000/newsletter/add/`, {
       method: "POST",
       headers: {
-        'Content-Type': "application/json",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(value),
     }).then(async function (response) {
@@ -37,19 +37,19 @@ function Contact() {
 
   const removeNewsLetter = () => {
     let value = {
-      email: newsletterEmailAddress
+      email: newsletterEmailAddress,
     };
 
     fetch(`https://3.21.19.109:8000/newsletter/remove/`, {
       method: "DELETE",
       headers: {
-        'Content-Type': "application/json",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(value),
     }).then(async function (response) {
       if (response.status === 200) {
         setmessageNewsletter("Successfully deleted email!");
-      } else if (response.status === 401 ) {
+      } else if (response.status === 401) {
         setmessageNewsletter("Email already unsubscribed");
       } else {
         setmessageNewsletter("Something went wrong");
@@ -67,21 +67,29 @@ function Contact() {
       <NavBar />
       <Header text="Contact" />
       <Container>
-        <div style={{ padding: "10px 0" }}>
+        <div style={{ padding: "20px 0 0 0" }}>
           <h1 style={{ textAlign: "center" }}>Related Links</h1>
           <p style={{ fontSize: "20px", textAlign: "center" }}>
             Feel free to connect with me on LinkedIn!
           </p>
         </div>
-        <Button href="https://www.linkedin.com/in/csrichardvo/" target="_blank">
-          LinkedIn
-        </Button>{" "}
-        <Button href="https://www.artstation.com/richardvo" target="_blank">
-          ArtStation
-        </Button>{" "}
+        <div style={{ display: "flex", justifyContent: "center", gap: "5px" }}>
+          <Button
+            href="https://www.linkedin.com/in/csrichardvo/"
+            target="_blank"
+          >
+            LinkedIn
+          </Button>{" "}
+          <Button href="https://github.com/ChromeWax/" target="_blank">
+            GitHub
+          </Button>{" "}
+          <Button href="https://www.artstation.com/richardvo" target="_blank">
+            ArtStation
+          </Button>{" "}
+        </div>
       </Container>
       <Container>
-        <div style={{ padding: "10px 0" }}>
+        <div style={{ padding: "20px 0 0 0" }}>
           <h1 style={{ textAlign: "center" }}>Newsletter</h1>
           <p style={{ fontSize: "20px", textAlign: "center" }}>
             Get an email whenever I make something new!
@@ -98,19 +106,27 @@ function Contact() {
               }}
             />
           </Form.Group>
-          <Button variant="primary" onClick={addNewsLetter}>
-            Add email
-          </Button>{" "}
-          <Button variant="primary" onClick={removeNewsLetter}>
-            Unsubscribe
-          </Button>
-          {messageNewsletter !== "" && (
-            <p style={{ marginTop: "5px" }}>{messageNewsletter}</p>
-          )}
+          <div
+            style={{ display: "flex", justifyContent: "center", gap: "5px" }}
+          >
+            <Button variant="primary" onClick={addNewsLetter}>
+              Add email
+            </Button>{" "}
+            <Button variant="primary" onClick={removeNewsLetter}>
+              Unsubscribe
+            </Button>
+          </div>
+          <div
+            style={{ display: "flex", justifyContent: "center", gap: "5px" }}
+          >
+            {messageNewsletter !== "" && (
+              <p style={{ marginTop: "5px" }}>{messageNewsletter}</p>
+            )}
+          </div>
         </Form>
       </Container>
       <Container>
-        <div style={{ padding: "10px 0" }}>
+        <div style={{ padding: "20px 0 0 0" }}>
           <h1 style={{ textAlign: "center" }}>Email Me</h1>
           <p style={{ fontSize: "20px", textAlign: "center" }}>
             I will respond within 3 days
@@ -127,9 +143,7 @@ function Contact() {
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Title</Form.Label>
-            <Form.Control
-              onChange={(e) => setEmailAddress(e.target.value)}
-            />
+            <Form.Control onChange={(e) => setEmailAddress(e.target.value)} />
           </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
             <Form.Label>Body</Form.Label>
@@ -139,12 +153,20 @@ function Contact() {
               onChange={(e) => setEmailBody(e.target.value)}
             />
           </Form.Group>
-          <Button variant="primary" onClick={sendEmail}>
-            Send
-          </Button>
-          {messageEmail !== "" && (
-            <p style={{ marginTop: "5px" }}>{messageEmail}</p>
-          )}
+          <div
+            style={{ display: "flex", justifyContent: "center", gap: "5px" }}
+          >
+            <Button variant="primary" onClick={sendEmail}>
+              Send Email
+            </Button>
+          </div>
+          <div
+            style={{ display: "flex", justifyContent: "center", gap: "5px" }}
+          >
+            {messageEmail !== "" && (
+              <p style={{ marginTop: "5px" }}>{messageEmail}</p>
+            )}
+          </div>
         </Form>
       </Container>
       <Footer />

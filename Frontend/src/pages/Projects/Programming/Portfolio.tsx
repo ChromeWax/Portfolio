@@ -13,8 +13,8 @@ function Portfolio() {
       <Container>
         <div style={{ padding: "10px 0 0" }}>
           <p style={{ fontSize: "20px" }}>
-            You're using it right now! I Wanted to create a website that housed all
-            my projects. That includes programming, 3D art, drawings, and
+            You're using it right now! I Wanted to create a website that housed
+            all my projects. That includes programming, 3D art, drawings, and
             writing. Instead of using a template from Squarespace, decided to
             code it all using the React framework.
             <br />
@@ -28,17 +28,11 @@ function Portfolio() {
             <b>Deployment:</b> AWS S3, AWS EC2, AWS CloudFront
           </p>
         </div>
-        <Button
-          href="https://github.com/ChromeWax/Portfolio"
-          target="_blank"
-        >
+        <Button href="https://github.com/ChromeWax/Portfolio" target="_blank">
           GitHub
         </Button>
       </Container>
-      <ImageFigure
-        image="Portfolio/Portfolio_2.png"
-        text="Front Page"
-      />
+      <ImageFigure image="Portfolio/Portfolio_2.png" text="Front Page" />
       <Footer />
     </>
   );

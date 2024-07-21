@@ -1,20 +1,28 @@
-import Card from 'react-bootstrap/Card';
+import Card from "react-bootstrap/Card";
 
 interface CardButtonProp {
-    image: string;
-    text: string;
-    link: string;
+  image: string;
+  text: string;
+  link: string;
 }
 
-function CardButton({image, text, link}: CardButtonProp) {
+function CardButton({ image, text, link }: CardButtonProp) {
   return (
     <>
-      <Card className='streched-link' style={{ cursor: "pointer" }}>
-        <Card.Img variant="top" src={image} style={{ objectFit:"cover", aspectRatio:"1 / 1"}}/>
+      <Card
+        className="streched-link"
+        style={{ cursor: "pointer" }}
+        onClick={() => {
+          window.scrollTo({top: 0, left: 0, behavior: 'instant'});
+        }}
+      >
+        <Card.Img
+          variant="top"
+          src={image}
+          style={{ objectFit: "cover", aspectRatio: "1 / 1" }}
+        />
         <Card.Body>
-          <Card.Text style={{textAlign:"center"}}>
-            {text}
-          </Card.Text>
+          <Card.Text style={{ textAlign: "center" }}>{text}</Card.Text>
         </Card.Body>
         <a href={link} className="stretched-link"></a>
       </Card>

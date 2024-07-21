@@ -11,12 +11,18 @@ function VideoFigure({ video, text }: VideoFigureProp) {
     <>
       <Container className="mt-3">
         <Figure>
-          <video controls autoPlay muted style={{
-              width: "100%",
-              height: "auto",
-              borderRadius: "10px"
-          }}>
-              <source src={video} type="video/mp4"/>
+          <video
+            controls
+            autoPlay
+            loop
+            muted
+            style={{
+              width: "100vw",
+              maxWidth: "100%",
+              borderRadius: "10px",
+            }}
+          >
+            <source src={video} type="video/mp4" />
           </video>
           <Figure.Caption style={{ textAlign: "center", fontSize: "18px" }}>
             {text}

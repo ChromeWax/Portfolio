@@ -1,6 +1,7 @@
 import NavBar from "../../../components/NavBar";
 import Header from "../../../components/Header";
 import ImageFigure from "../../../components/ImageFigure";
+import VideoFigure from "../../../components/VideoFigure";
 import Footer from "../../../components/Footer";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
@@ -24,7 +25,8 @@ function LanternFall() {
             <br />
             <b>Languages:</b> Javascript, HTML, CSS
             <br />
-            <b>Tools:</b> Node.js, PostgreSQL, Express.js, Anime.js, Google Maps API
+            <b>Tools:</b> Node.js, PostgreSQL, Express.js, Anime.js, Google Maps
+            API
             <br />
             <b>Deployment:</b> Google Cloud Platform, Cloudflare
           </p>
@@ -33,8 +35,8 @@ function LanternFall() {
           GitHub
         </Button>
       </Container>
-      <ImageFigure
-        image="LanternFall/LanternFall_2.gif"
+      <VideoFigure
+        video="LanternFall/LanternFall_2.mp4"
         text="Walkthrough of website"
       />
       <ImageFigure image="LanternFall/LanternFall_3.png" text="Map view" />

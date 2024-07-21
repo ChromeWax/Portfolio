@@ -37,18 +37,24 @@ function FishNChips() {
           target="_blank"
         >
           Steam
-        </Button>{' '}
-        <Button
-          href="https://chromewax.itch.io/fish-n-chips"
-          target="_blank"
-        >
+        </Button>{" "}
+        <Button href="https://chromewax.itch.io/fish-n-chips" target="_blank">
           itch.io (Slightly old)
         </Button>
       </Container>
-      <ImageFigure image="FishNChips/FishNChips_2.png" text="Player shoots a rope into wall" />
+      <ImageFigure
+        image="FishNChips/FishNChips_2.png"
+        text="Player shoots a rope into wall"
+      />
       <ImageFigure image="FishNChips/FishNChips_3.jpg" text="Cutscene" />
-      <ImageFigure image="FishNChips/FishNChips_4.jpg" text="Player on moving platform" />
-      <ImageFigure image="FishNChips/FishNChips_5.jpg" text="Swinging between moving platforms" />
+      <ImageFigure
+        image="FishNChips/FishNChips_4.jpg"
+        text="Player on moving platform"
+      />
+      <ImageFigure
+        image="FishNChips/FishNChips_5.jpg"
+        text="Swinging between moving platforms"
+      />
       <Footer />
     </>
   );

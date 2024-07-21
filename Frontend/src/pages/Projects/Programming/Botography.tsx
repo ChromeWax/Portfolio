@@ -45,16 +45,34 @@ function Botography() {
             <b>Languages:</b> C#
           </p>
         </div>
-        <Button href="https://project-bitter-root.itch.io/botography" target="_blank">
+        <Button
+          href="https://project-bitter-root.itch.io/botography"
+          target="_blank"
+        >
           itch.io
         </Button>
       </Container>
       <ImageFigure image="Botography/Botography_2.png" text="Front Page" />
-      <ImageFigure image="Botography/Botography_3.png" text="Interacting with plant" />
-      <ImageFigure image="Botography/Botography_4.png" text="Using a plant to traverse elevations" />
-      <ImageFigure image="Botography/Botography_5.png" text="Using a plant to destory obstacles" />
-      <ImageFigure image="Botography/Botography_6.png" text="Wearing various plant as equipment" />
-      <ImageFigure image="Botography/Botography_7.png" text="Inventory screen" />
+      <ImageFigure
+        image="Botography/Botography_3.png"
+        text="Interacting with plant"
+      />
+      <ImageFigure
+        image="Botography/Botography_4.png"
+        text="Using a plant to traverse elevations"
+      />
+      <ImageFigure
+        image="Botography/Botography_5.png"
+        text="Using a plant to destory obstacles"
+      />
+      <ImageFigure
+        image="Botography/Botography_6.png"
+        text="Wearing various plant as equipment"
+      />
+      <ImageFigure
+        image="Botography/Botography_7.png"
+        text="Inventory screen"
+      />
       <ImageFigure image="Botography/Botography_8.png" text="Crafting screen" />
       <ImageFigure image="Botography/Botography_9.png" text="Map screen" />
       <Footer />

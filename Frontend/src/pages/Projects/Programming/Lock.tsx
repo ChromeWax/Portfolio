@@ -1,6 +1,6 @@
 import NavBar from "../../../components/NavBar";
 import Header from "../../../components/Header";
-import ImageFigure from "../../../components/ImageFigure";
+import VideoFigure from "../../../components/VideoFigure";
 import Footer from "../../../components/Footer";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
@@ -30,11 +30,14 @@ function Lock() {
             <b>Interfaces:</b> SPI, I2C, 1-Wire
           </p>
         </div>
-        <Button href="https://github.com/ChromeWax/Lock_via_Touch_and_Display_Components" target="_blank">
+        <Button
+          href="https://github.com/ChromeWax/Lock_via_Touch_and_Display_Components"
+          target="_blank"
+        >
           GitHub
         </Button>
       </Container>
-      <ImageFigure image="Lock/Lock_2.gif" text="Project in action" />
+      <VideoFigure video="Lock/Lock_2.mp4" text="Project in action" />
       <Footer />
     </>
   );

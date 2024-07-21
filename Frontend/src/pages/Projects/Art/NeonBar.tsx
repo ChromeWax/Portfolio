@@ -32,7 +32,7 @@ function NeonBar() {
       <ImageFigure image="Neon Bar/Neon_Bar_1.jpg" text="Final shot" />
       <ImageFigure image="Neon Bar/Neon_Bar_2.jpg" text="Clay" />
       <ImageFigure image="Neon Bar/Neon_Bar_3.jpg" text="Old render" />
-      <ImageFigure image="Neon Bar/Neon_Bar_4.jpg" text="Original aspiration (Did not make this)" />
+      <ImageFigure image="Neon Bar/Neon_Bar_4.jpg" text="Original inspiration (Did not make this)" />
       <Footer />
     </>
   );

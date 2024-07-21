@@ -9,15 +9,16 @@ interface ImageFigureProp {
 function ImageFigure({ image, text }: ImageFigureProp) {
   return (
     <>
-      <Container className="mt-3">
+      <Container className="mt-3" style={{width: "100%"}}>
         <Figure>
           <Figure.Image
             style={{
-              width: "80rem",
-              height: "auto",
-              borderRadius: "10px"
+              width: "100vw",
+              maxWidth: "100%",
+              borderRadius: "10px",
             }}
             src={image}
+            alt={text}
           />
           <Figure.Caption style={{ textAlign: "center", fontSize: "18px" }}>
             {text}
