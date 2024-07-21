@@ -1,6 +1,7 @@
 import NavBar from "../../../components/NavBar";
 import Header from "../../../components/Header";
 import ImageFigure from "../../../components/ImageFigure";
+import VideoFigure from "../../../components/VideoFigure";
 import Footer from "../../../components/Footer";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
@@ -30,6 +31,7 @@ function StillLife() {
         </Button>
       </Container>
       <ImageFigure image="Still Life/StillLife_1.jpg" text="Remade shot in Blender" />
+      <VideoFigure video="Still Life/StillLife_3.mp4" text="Video in UE4" />
       <ImageFigure image="Still Life/StillLife_2.jpg" text="Original shot in UE4" />
       <ImageFigure image="Still Life/StillLife_4.jpg" text="Experimental render" />
       <ImageFigure image="Still Life/StillLife_5.jpg" text="Texture flats" />

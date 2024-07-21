@@ -18,7 +18,7 @@ function Contact() {
       email: newsletterEmailAddress
     };
 
-    fetch(`http://127.0.0.1:8000/newsletter/add/`, {
+    fetch(`https://3.21.19.109:8000/newsletter/add/`, {
       method: "POST",
       headers: {
         'Content-Type': "application/json",
@@ -40,7 +40,7 @@ function Contact() {
       email: newsletterEmailAddress
     };
 
-    fetch(`http://127.0.0.1:8000/newsletter/remove/`, {
+    fetch(`https://3.21.19.109:8000/newsletter/remove/`, {
       method: "DELETE",
       headers: {
         'Content-Type': "application/json",

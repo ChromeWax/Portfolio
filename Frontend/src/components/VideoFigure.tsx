@@ -1,24 +1,23 @@
 import Figure from "react-bootstrap/Figure";
 import Container from "react-bootstrap/Container";
 
-interface ImageFigureProp {
-  image: string;
+interface VideoFigureProp {
+  video: string;
   text: string;
 }
 
-function ImageFigure({ image, text }: ImageFigureProp) {
+function VideoFigure({ video, text }: VideoFigureProp) {
   return (
     <>
       <Container className="mt-3">
         <Figure>
-          <Figure.Image
-            style={{
-              width: "80rem",
+          <video controls autoPlay muted style={{
+              width: "100%",
               height: "auto",
               borderRadius: "10px"
-            }}
-            src={image}
-          />
+          }}>
+              <source src={video} type="video/mp4"/>
+          </video>
           <Figure.Caption style={{ textAlign: "center", fontSize: "18px" }}>
             {text}
           </Figure.Caption>
@@ -28,4 +27,4 @@ function ImageFigure({ image, text }: ImageFigureProp) {
   );
 }
 
-export default ImageFigure;
+export default VideoFigure;

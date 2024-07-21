@@ -4,6 +4,7 @@ import ImageFigure from "../../../components/ImageFigure";
 import Footer from "../../../components/Footer";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
+import VideoFigure from "../../../components/VideoFigure";
 
 function ChromePhone() {
   return (
@@ -29,6 +30,7 @@ function ChromePhone() {
           ArtStation
         </Button>
       </Container>
+      <VideoFigure video="ChromePhone/ChromePhone_4.mp4" text="Trailer" />
       <ImageFigure image="ChromePhone/ChromePhone_1.jpg" text="Main shot" />
       <ImageFigure image="ChromePhone/ChromePhone_2.jpg" text="Back shot" />
       <ImageFigure image="ChromePhone/ChromePhone_3.jpg" text="Multiple colors" />

@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-mdzzqmuae0=!jo2_&p4%6-ic)o$$7$9^gz=-@oxm%#@d6$o*uk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -52,8 +52,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'Portfolio.urls'
-CORS_ALLOWED_ORIGINS = ["http://localhost:4173", "https://richardvo.net"]
-CSRF_TRUSTED_ORIGINS = ["http://localhost:4173", "https://richardvo.net"]
+CORS_ALLOW_ALL_ORIGINS = True
 
 TEMPLATES = [
     {

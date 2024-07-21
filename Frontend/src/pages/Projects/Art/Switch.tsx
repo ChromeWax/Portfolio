@@ -1,6 +1,7 @@
 import NavBar from "../../../components/NavBar";
 import Header from "../../../components/Header";
 import ImageFigure from "../../../components/ImageFigure";
+import VideoFigure from "../../../components/VideoFigure";
 import Footer from "../../../components/Footer";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
@@ -36,6 +37,7 @@ function Switch() {
           SketchFab
         </Button>
       </Container>
+      <VideoFigure video="Nintendo Switch/Switch_2.mp4" text="Video" />
       <ImageFigure image="Nintendo Switch/Switch_3.jpg" text="Final shot" />
       <ImageFigure image="Nintendo Switch/Switch_4.jpg" text="Back shot" />
       <ImageFigure image="Nintendo Switch/Switch_5.jpg" text="Comped into real photo" />

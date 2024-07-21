@@ -4,6 +4,7 @@ import ImageFigure from "../../../components/ImageFigure";
 import Footer from "../../../components/Footer";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
+import VideoFigure from "../../../components/VideoFigure";
 
 function WWITrench() {
   return (
@@ -29,6 +30,7 @@ function WWITrench() {
           ArtStation
         </Button>
       </Container>
+      <VideoFigure video="WWI Trench/WWI_Trench_2.mp4" text="Walk through the scene" />
       <ImageFigure image="WWI Trench/WWI_Trench_1.jpg" text="Final shot" />
       <ImageFigure image="WWI Trench/WWI_Trench_3.jpg" text="Same picture in colored Form" />
       <ImageFigure image="WWI Trench/WWI_Trench_4.jpg" text="Substance Designer of ground" />
