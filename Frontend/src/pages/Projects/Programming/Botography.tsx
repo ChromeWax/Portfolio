@@ -50,6 +50,12 @@ function Botography() {
           target="_blank"
         >
           itch.io
+        </Button>{' '}
+        <Button
+          href="https://github.com/ChromeWax/Botography"
+          target="_blank"
+        >
+          GitHub
         </Button>
       </Container>
       <ImageFigure image="Botography/Botography_2.png" text="Front Page" />

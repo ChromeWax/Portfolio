@@ -6,10 +6,9 @@ import CardButton from "../components/CardButton";
 import Header from "../components/Header";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 enum Category {
-  all,
   programming,
   render,
 }
@@ -122,19 +121,21 @@ function Projects() {
   ];
 
   const [visibleCards, setVisibleCards] = useState([...availableCards]);
-  const [currentCategory, setCurrentCategory] = useState(Category.all);
+  const [currentCategory, setCurrentCategory] = useState(Category.programming);
 
   const setVisibleCardsToCategory = (category: Category) => {
     let newVisibleCards: Card[] = [];
     availableCards.forEach((availableCard) => {
-      if (category === Category.all) {
-        newVisibleCards.push(availableCard);
-      } else if (availableCard.category == category) {
+      if (availableCard.category == category) {
         newVisibleCards.push(availableCard);
       }
     });
     setVisibleCards(newVisibleCards);
   };
+
+  useEffect(() => {
+    setVisibleCardsToCategory(currentCategory)
+  });
 
   return (
     <>
@@ -144,24 +145,12 @@ function Projects() {
         <div style={{ display: "flex", justifyContent: "center", gap: "5px" }}>
           <Button
             variant={
-              currentCategory === Category.all ? "primary" : "outline-primary"
-            }
-            onClick={() => {
-              setCurrentCategory(Category.all);
-              setVisibleCardsToCategory(Category.all);
-            }}
-          >
-            All
-          </Button>
-          <Button
-            variant={
               currentCategory === Category.programming
                 ? "primary"
                 : "outline-primary"
             }
             onClick={() => {
               setCurrentCategory(Category.programming);
-              setVisibleCardsToCategory(Category.programming);
             }}
           >
             Programming
@@ -174,7 +163,6 @@ function Projects() {
             }
             onClick={() => {
               setCurrentCategory(Category.render);
-              setVisibleCardsToCategory(Category.render);
             }}
           >
             3D Render
