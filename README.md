@@ -15,6 +15,7 @@ Frontend
 * run the command 'npm run dev'
 
 Backend
+* install django
 * cd into Backend folder
 * run the command 'run manage.py runserver'
 
