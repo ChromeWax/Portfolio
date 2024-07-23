@@ -19,6 +19,10 @@ function Portfolio() {
             code it all using the React framework.
             <br />
             <br />
+            I then deployed it using Amazon Web Services. I use S3 buckets to
+            host the site, EC2 to host the backend, and Cloudfront as the CDN.
+            <br />
+            <br />
             <b>Software:</b> Visual Studio Code
             <br />
             <b>Languages:</b> Typescript, HTML, CSS
