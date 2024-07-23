@@ -10,16 +10,12 @@ Emails are stored in a PostgreSQL database.
 
 # How To Run
 Frontend
-<br />
-cd into Frontend folder
-<br />
-run the command 'npm run dev'
+* cd into Frontend folder
+* run the command 'npm run dev'
 
 Backend
-<br />
-cd into Backend folder
-<br />
-run the command 'run manage.py runserver'
+* cd into Backend folder
+* run the command 'run manage.py runserver'
 
 # Screenshots
 ![alt text](Images/Front.png)
