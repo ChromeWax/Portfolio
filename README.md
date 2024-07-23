@@ -5,6 +5,9 @@ The website also features the ability for users to sign up for a newsletter and 
 Django is used for the backend with multiple REST API endpoints.
 Emails are stored in a PostgreSQL database.
 
+# Website
+* [richardvo.net](https://richardvo.net/)
+
 # How To Run
 Frontend
 <br />
