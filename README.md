@@ -11,9 +11,11 @@ Emails are stored in a PostgreSQL database.
 # How To Run
 Frontend
 * cd into Frontend folder
+* run the command 'npm install'
 * run the command 'npm run dev'
 
 Backend
+* install django
 * cd into Backend folder
 * run the command 'run manage.py runserver'
 
