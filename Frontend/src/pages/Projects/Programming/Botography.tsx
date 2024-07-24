@@ -21,23 +21,22 @@ function Botography() {
             <br />
             <br />
             Plants gives the player special powers such as destroying obstacles,
-            going underwater, traversing across different elevations, and endure
-            harsh environments. To find these plants, the player must experiment
-            with different soil and water combinations or find recipes in notes
-            scattered in the world.
+            going underwater, traversing across different elevations, and
+            enduring harsh environments. To find these plants, the player must
+            experiment with different soil and water combinations or find
+            recipes in notes scattered in the world.
             <br />
             <br />
-            The game was worked by 16 students with 6 Computer Science, 8 Game
-            Design, and 2 Sound Engineer students. I and one other led
-            development of all features of the game with multiple scrums. I was
+            The game was worked by 16 people with 6 Computer Science, 8 Game
+            Design, and 2 Sound Engineer students. One other and I led the
+            development of the game's features with multiple scrums. I was
             mainly responsible for coding player movement, elevation traversal,
             various plant abilities, item stacking system, underwater system,
             and almanac system. I assisted in the placement system, saving
             system, settings system, and inventory system. I also worked to
-            improve upon the art by the Game Design students by adding shadows,
-            post processing, blur effects, and more. The project ultimately won
-            second place out of roughly 60 projects in the senior project
-            showcase.
+            improve upon the art of the Game Design students by adding shadows,
+            post-processing, blur effects, and more. The project ultimately won
+            second place out of roughly 60 projects in the senior showcase.
             <br />
             <br />
             <b>Software:</b> Unity, Visual Studio, Perforce, Jira
@@ -50,11 +49,8 @@ function Botography() {
           target="_blank"
         >
           itch.io
-        </Button>{' '}
-        <Button
-          href="https://github.com/ChromeWax/Botography"
-          target="_blank"
-        >
+        </Button>{" "}
+        <Button href="https://github.com/ChromeWax/Botography" target="_blank">
           GitHub
         </Button>
       </Container>

@@ -17,7 +17,7 @@ function Lock() {
             interact with various components. This project was about tapping the
             touch sensor the correct number of times per 5 second countdown. If
             the touch sensor was pressed the correct number of times, the
-            display would turn green else red. I used a raspberry pi, a 1-wire
+            display would turn green else to red. I used a raspberry pi, a 1-wire
             device to store the combination of correct presses, a display to
             show countdown and final result, and a touch sensor for inputting
             combination.

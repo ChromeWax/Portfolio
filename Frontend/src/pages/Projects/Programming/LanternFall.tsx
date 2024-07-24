@@ -14,10 +14,10 @@ function LanternFall() {
       <Container>
         <div style={{ padding: "10px 0 0" }}>
           <p style={{ fontSize: "20px" }}>
-            Worked wtih 4 engineers to create a website that raised awareness of
-            the invasive species known an lantern flies. On the website, you can
-            post whenever you killed a lanternfly with a title, text, and image.
-            That post will then show up as a pin on google maps. This project
+            Worked with 4 engineers to create a website that raised awareness of
+            the invasive species known as lantern flies. On the website, you can
+            post whenever you kill a lanternfly with a title, text, and image.
+            The post will then show up as a pin on google maps. This project
             was with 4 engineers in total where my main responsibility was
             writing the code for the server and setting up the database. The
             main look of the website was based on the TV trope of hacking.

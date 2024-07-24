@@ -37,8 +37,8 @@ function Projects() {
     {
       category: Category.programming,
       image: "RoboRythm/RoboRythm_1.png",
-      text: "Robo Rythm Game",
-      link: "#RoboRythm",
+      text: "Robo Rhythm Game",
+      link: "#RoboRhythm",
     },
     {
       category: Category.render,

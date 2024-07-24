@@ -8,7 +8,7 @@ import Contact from "./pages/Contact.tsx";
 
 import Portfolio from "./pages/Projects/Programming/Portfolio.tsx";
 import Botography from "./pages/Projects/Programming/Botography.tsx";
-import RoboRythm from "./pages/Projects/Programming/RoboRythm.tsx";
+import RoboRhythm from "./pages/Projects/Programming/RoboRhythm.tsx";
 import Apothecary from "./pages/Projects/Art/Apothecary.tsx";
 import LanternFall from "./pages/Projects/Programming/LanternFall.tsx";
 import FishNChips from "./pages/Projects/Programming/FishNChips.tsx";
@@ -47,8 +47,8 @@ const router = createHashRouter([
     element: <Botography />
   },
   {
-    path: "roborythm",
-    element: <RoboRythm />
+    path: "roborhythm",
+    element: <RoboRhythm />
   },
   {
     path: "apothecary",

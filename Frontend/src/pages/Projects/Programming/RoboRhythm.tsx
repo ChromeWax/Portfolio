@@ -5,11 +5,11 @@ import Footer from "../../../components/Footer";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 
-function RoboRythm() {
+function RoboRhythm() {
   return (
     <>
       <NavBar />
-      <Header text="Robo Rythm Game" />
+      <Header text="Robo Rhythm Game" />
       <Container>
         <div style={{ padding: "10px 0 0" }}>
           <p style={{ fontSize: "20px" }}>
@@ -21,17 +21,16 @@ function RoboRythm() {
             of your beloved volcano to guide your way.
             <br />
             <br />
-            The game is a rythm game where the player has to destory bots in
+            The game is a rhythm game where the player has to destroy bots in
             conjunction with the beat of the song. Throughout the game, the
             player progresses the story through multiple cutscenes.
             <br />
             <br />
             This game was made by a team of three. I was responsible for
-            organizing the development and ensuring the game was feature rich
-            within 5 weeks. I wrote the logic behind the beat system, sound
-            systems, enemy logic, ui elements, saving system, settings system,
-            various visual elements, and input system. The game won the first
-            spot in the class competition.
+            organizing the development that lasted 5 weeks. I wrote the logic
+            behind the beat system, sound systems, enemy logic, UI elements,
+            saving system, settings system, various visual elements, and input
+            system. The game won the first spot in the class competition.
             <br />
             <br />
             <b>Software:</b> Unity, Visual Studio, Perforce
@@ -39,7 +38,7 @@ function RoboRythm() {
             <b>Languages:</b> C#
           </p>
         </div>
-        <Button href="https://chromewax.itch.io/robo-rythm" target="_blank">
+        <Button href="https://chromewax.itch.io/robo-rhythm" target="_blank">
           itch.io
         </Button>
       </Container>
@@ -52,4 +51,4 @@ function RoboRythm() {
   );
 }
 
-export default RoboRythm;
+export default RoboRhythm;

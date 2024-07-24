@@ -22,9 +22,9 @@ function FishNChips() {
             player progresses the story through multiple cutscenes.
             <br />
             <br />
-            This game was made by a team of four where I led development. I was
+            This game was made by a team of four where I led the development. I was
             primarily responsible for developing the logic of swinging mechanic,
-            sound systems, cutscenes, ui elements, and some traps.
+            sound systems, cutscenes, UI elements, and some traps.
             <br />
             <br />
             <b>Software:</b> Unity, Visual Studio, Perforce
