@@ -31,6 +31,9 @@ function LanternFall() {
             <b>Deployment:</b> Google Cloud Platform, Cloudflare
           </p>
         </div>
+        <Button href="https://lanternfall.com/" target="_blank">
+          LanternFall
+        </Button>{' '}
         <Button href="https://github.com/ChromeWax/LanternFall" target="_blank">
           GitHub
         </Button>
